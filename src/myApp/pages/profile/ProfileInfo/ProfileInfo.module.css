@@ -1,0 +1,27 @@
+/* start Profile Info */
+
+.profileInfo {
+    display: flex;
+}
+
+.profileInfo img {
+    width: 100px;
+    height: 100px;
+}
+
+.customer {
+    padding-left: 30px;
+}
+
+h2 {
+    margin: 0 0 20px;
+    line-height: 20px;
+    font-size: 25px;
+}
+
+.customerInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* end Profile Info */

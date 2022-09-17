@@ -1,0 +1,38 @@
+.myAppHeader {
+    min-height: 100px;
+    grid-area: header;
+    display: flex;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.9923319669664741) -10%, rgba(95,158,160,1) 100%, rgba(0,212,255,1) 100%);
+
+}
+
+.myAppHeader img {
+    width: 120px;
+    height: 100%;
+    animation: App-logo-spin infinite 20s linear;
+}
+
+.myAppHeader .headerTitte {
+    width: calc(100% - 240px);
+    padding-bottom: 10px;
+}
+
+.myAppHeader .headerTitte span {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-size: 48px;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

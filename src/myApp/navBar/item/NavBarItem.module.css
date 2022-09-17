@@ -1,0 +1,30 @@
+.item {
+    list-style: none;
+    margin-bottom: 10px
+}
+
+.item:last-of-type {
+    margin-bottom: 0;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.item [aria-current="page"] {
+    background-color: cadetblue;
+    border-radius: 20px;
+    color: white;
+}
+
+.item [aria-current="page"]:hover span {
+    border: none;
+}
+
+.item a:hover span {
+    border-bottom: 1px solid white;
+}

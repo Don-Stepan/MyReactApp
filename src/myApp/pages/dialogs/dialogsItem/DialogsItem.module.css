@@ -1,0 +1,22 @@
+.dialog a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 7px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dialog a:hover {
+    text-decoration: underline;
+}
+
+.dialog a[aria-current="page"] {
+    background: gold;
+    border-radius: 20px;
+    color: white;
+}
+
+.dialog a[aria-current="page"]:hover {
+    text-decoration: none;
+}

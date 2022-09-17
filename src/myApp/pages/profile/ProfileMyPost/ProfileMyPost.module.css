@@ -1,0 +1,17 @@
+/* start Profile Post */
+
+.myPost {
+    padding: 20px 10px;
+}
+
+.myPost img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.postText {
+    padding: 0 20px;
+}
+
+/* end Profile Post */
