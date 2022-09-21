@@ -1,7 +1,10 @@
 import s from './ProfileMyPosts.module.css';
 import ProfileMyPost from './../ProfileMyPost/ProfileMyPost';
 
-const ProfileMyPosts = () => {
+const ProfileMyPosts = (props) => {
+
+    let profileMyPostElement = props.profileMyPosts.map( (e) => <ProfileMyPost key={e.id} message={e.message} likes={e.likes} id={e.id} /> );
+
     return (
         <div className={s.myPosts}>
             <div className={s.myPostsTittle}>
@@ -14,8 +17,7 @@ const ProfileMyPosts = () => {
                 </div>
             </div>
 
-            <ProfileMyPost message="Post 1" likes="3" /> 
-            <ProfileMyPost message="Post 2" likes="5" />
+            { profileMyPostElement }
 
         </div> 
     )

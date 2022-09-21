@@ -5,7 +5,7 @@ import Pages from './myApp/pages/Pages';
 import { BrowserRouter } from 'react-router-dom';
 
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
 
@@ -13,9 +13,9 @@ const App = () => {
         
         <Header />
 
-        <NavBar />
+        <NavBar navBarItems={props.state.sidebar.navBarItems} />
 
-        <Pages />
+        <Pages state={props.state.pages} />
        
       </div>
     </BrowserRouter>

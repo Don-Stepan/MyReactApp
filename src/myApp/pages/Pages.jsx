@@ -7,13 +7,13 @@ import Profile from './profile/Profile';
 import { Routes, Route } from 'react-router-dom';
 
 
-const Pages = () => {
+const Pages = (props) => {
     return (
             
         <div className={s.myAppPages}>
             <Routes>
-                <Route element={<Profile />} path='/profile' />
-                <Route element={<Dialogs />} path='/dialogs/*' />
+                <Route element={<Profile state={props.state.profilePage} />} path='/profile' />
+                <Route element={<Dialogs state={props.state.dialogsPage} />} path='/dialogs/*' />
                 <Route element={<News />} path='/news'/>
                 <Route element={<Music />} path='/music'/>
                 <Route element={<Settings />} path='/settings'/>

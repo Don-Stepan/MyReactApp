@@ -3,7 +3,7 @@ import ProfileHeaderImg from './ProfileTopImg/ProfileTopImg';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import ProfileMyPosts from './ProfileMyPosts/ProfileMyPosts';
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div className={s.myAppProfilePage}>
 
@@ -11,7 +11,7 @@ const Profile = () => {
 
             <ProfileInfo /> 
 
-            <ProfileMyPosts /> 
+            <ProfileMyPosts profileMyPosts={props.state.profileMyPosts} /> 
             
         </div>
     )
